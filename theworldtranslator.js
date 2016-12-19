@@ -7,4 +7,26 @@ The World Translator
 - Call that function for each of the supported languages and log the result to make sure it works.
 */
 
-// YOUR CODE GOES HERE
+// 
+function helloWorld(languageCode) {
+   //create some container that's going to hold the translated value	
+  var translated;
+
+
+	//TODO: translate language Code to translated... but do this later
+	if (languageCode === "es") {
+		translated = "Hola, mundo";
+	} else if (languageCode === "de") {
+	  translated = "Nine!";
+	}else {
+		  //default to English
+		  translated = "Hello, world!";  
+	}
+	//return the translated value to the caller
+	return translated;
+	}
+
+
+console.log(helloWorld("es"));
+console.log(helloWorld("de"));
+console.log(helloWorld("en"));
